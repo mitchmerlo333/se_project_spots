@@ -5,6 +5,8 @@
 }
 
 .profile__avatar {
+  height: 190px;
+  width: 190px;
   margin-right: 20px;
 }
 
@@ -17,7 +19,13 @@
   margin: 0 0 12px;
   font-size: 32px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__description {
@@ -25,6 +33,12 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
 }
 
 .profile__edt-btn {
@@ -40,4 +54,41 @@
   width: 149px;
   background-color: #212121;
   border-radius: 8px;
+  color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .profile__avatar {
+    margin: 0 0 12px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    margin: 0 0 6px;
+    min-width: 288px;
+  }
+
+  .profile__description {
+    margin: 0 0 32px;
+    min-width: 288px;
+  }
+
+  .profile__column {
+    margin: 0 0 20px;
+  }
+
+  .profile__add-btn {
+    margin: 0;
+    width: 288px;
+  }
 }
