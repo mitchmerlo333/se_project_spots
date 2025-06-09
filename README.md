@@ -1,4 +1,24 @@
-# Project 3: Spots
+# Spots Project Sprint 3 SE Tripleten
+
+This is the third project of the Software Engineering program at TripleTen. It was created using advanced HTML and CSS based on the given design layout on Figma.
+
+## Project Features
+
+- Semantic HTML
+- CSS design
+- FlexBox
+- BEM file structure and orginization
+- A custom form
+- Grid Layout
+- Responsive design
+
+## Images
+
+## Figma
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+## Github Link
 
 ### Overview
 
@@ -8,7 +28,7 @@
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+This project is made so all the elements are displayed correctly on popular screen sizes.
 
 **Figma**
 
@@ -17,43 +37,3 @@ This project is made so all the elements are displayed correctly on popular scre
 **Images**
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
-
-<!--
-
-# Project Title
-
-A brief description of your project and its purpose.
-
-## Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## About
-
-Explain what your project does and why it exists. Highlight the problems it solves or the goals it achieves.
-
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/project-name.git
-cd project-name
-
--->
