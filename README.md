@@ -25,3 +25,5 @@ This is the third project of the Software Engineering program at TripleTen. It w
 **Images**
 
 The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+
+I know i dont have images or videos yet, I just want to get my Syntax right first. I also forgot to hit git push before my last submission, so it was not totally updated.

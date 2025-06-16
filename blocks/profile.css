@@ -21,7 +21,7 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 1.2;
-  text-decoration-color: #212121;
+  color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -33,8 +33,10 @@
 .profile__description {
   margin: 0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
+  color: #212121;
+  opacity: 70%;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -44,20 +46,40 @@
 }
 
 .profile__edt-btn {
+  height: 16px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+  left: 100%;
   margin-right: auto;
   margin-top: auto;
   background-color: transparent;
   border: none;
   text-decoration-color: #212121;
+  opacity: 70%;
+}
+
+.profile__edt-btn:hover {
+  text-decoration: underline;
+  opacity: 100%;
 }
 
 .profile__add-btn {
+  margin-top: auto;
   margin-left: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  border: none;
   height: 52px;
   width: 149px;
   background-color: #212121;
   border-radius: 8px;
-  color: #fff;
+  color: rgba(252, 245, 229, 1);
+}
+
+.profile__add-btn:hover {
+  background-color: #424242;
 }
 
 @media screen and (max-width: 320px) {
