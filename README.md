@@ -31,4 +31,4 @@ Here is the live site [here](https://github.com/mitchmerlo333/se_project_spots/d
 
 **Images**
 
-Here is my video describing the work I have done on this project [here](./videos/Spots%20Sprint%203.mp4)
+Here is my video describing the work I have done on this project [here](https://drive.google.com/file/d/1VqaaaULH26yxNGr58R1UV6SO2Eu_TZtg/view?usp=sharing)
