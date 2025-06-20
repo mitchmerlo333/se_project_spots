@@ -4,7 +4,8 @@
 
 - Intro
 - Figma
-- Images
+- Live Demo
+- Video
 
 **Intro**
 
@@ -27,8 +28,8 @@ Here is the like to the Figma layout [Link to the project on Figma](https://www.
 
 ## Live Demo
 
-Here is the live site [here](https://github.com/mitchmerlo333/se_project_spots/deployments/github-pages)
+Here is the live site [here](https://mitchmerlo333.github.io/se_project_spots/)
 
-**Images**
+**Video**
 
-Here is my video describing the work I have done on this project [here](https://drive.google.com/file/d/1VqaaaULH26yxNGr58R1UV6SO2Eu_TZtg/view?usp=sharing)
+Here is my video describing the work I have done on this project [here](https://drive.google.com/file/d/1BhSdPXFejUp49cg4eJ2_OXafvEnxUtXg/view?usp=sharing)
