@@ -16,6 +16,7 @@
 }
 
 .card__title {
+  max-width: 250px;
   margin: 0;
   font-size: 20px;
   font-weight: 500;
