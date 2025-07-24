@@ -46,6 +46,20 @@ editProfileForm.addEventListener("submit", (e) => {
   closeModal(editProfileModal);
 });
 
+newPostModal.addEventListener("click", (e) => {
+  newPostInput = newPostModal.querySelector("#image-link-input");
+  newPosteDescriptionInput = newPostModal.querySelector("#post-caption-input");
+  newPostEl = document.querySelector(".profile__post");
+  closeModal(newPostModal);
+});
+
+newPostForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  newPostEl.textContent = newPostInput.value;
+  newPostDescriptionEl.textContent = newPosteDescriptionInput.value;
+  closeModal(newPostModal);
+});
+
 // Open New Post Modal
 newPostBtn.addEventListener("click", () => {
   openModal(newPostModal);
