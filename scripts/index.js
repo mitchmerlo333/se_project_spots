@@ -6,7 +6,6 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
-// Profile elements
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 const editProfileNameInput = editProfileModal.querySelector(
@@ -15,10 +14,17 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const editProfileForm = editProfileModal.querySelector(".modal__form");
-const newPostForm = newPostModal.querySelector(".modal__form");
 
-// Modal utility functions
+const editProfileForm = editProfileModal.querySelector(".modal__form");
+
+const newPostInput = newPostModal.querySelector("#image-link-input");
+
+const newPostDescriptionInput = newPostModal.querySelector(
+  "#post-caption-input"
+);
+const newPostForm = newPostModal.querySelector(".modal__form");
+const newPostEl = document.querySelector(".profile__post");
+
 function openModal(modal) {
   modal.classList.add("modal_opened");
 }
@@ -27,19 +33,17 @@ function closeModal(modal) {
   modal.classList.remove("modal_opened");
 }
 
-// Open Edit Profile Modal
+// Edit Profile Modal functionality
 editProfileBtn.addEventListener("click", () => {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
   openModal(editProfileModal);
 });
 
-// Close Edit Profile Modal
 editProfileCloseBtn.addEventListener("click", () => {
   closeModal(editProfileModal);
 });
 
-// Save profile on submit
 editProfileForm.addEventListener("submit", (e) => {
   e.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
@@ -47,7 +51,8 @@ editProfileForm.addEventListener("submit", (e) => {
   closeModal(editProfileModal);
 });
 
-newPostModal.addEventListener("click", (e) => {
+// New Post Modal functionality
+newPostBtn.addEventListener("click", (e) => {
   newPostInput = newPostModal.querySelector("#image-link-input");
   newPosteDescriptionInput = newPostModal.querySelector("#post-caption-input");
   newPostEl = document.querySelector(".profile__post");
@@ -61,12 +66,10 @@ newPostForm.addEventListener("submit", (e) => {
   closeModal(newPostModal);
 });
 
-// Open New Post Modal
 newPostBtn.addEventListener("click", () => {
   openModal(newPostModal);
 });
 
-// Close New Post Modal
 newPostCloseBtn.addEventListener("click", () => {
   closeModal(newPostModal);
 });
