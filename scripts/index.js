@@ -23,6 +23,7 @@ const newPostDescriptionInput = newPostModal.querySelector(
   "#post-caption-input"
 );
 const newPostForm = newPostModal.querySelector(".modal__form");
+// Select the new post input
 const newPostEl = document.querySelector(".profile__post");
 
 function openModal(modal) {
@@ -46,26 +47,31 @@ editProfileCloseBtn.addEventListener("click", () => {
 
 editProfileForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  profileNameEl.textContent = editProfileNameInput.value;
+  profileNameEl.textContent = editProfileNameInput.value; // Review this
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
 });
 
-// New Post Modal functionality
+// Close New Post Modal functionality
+// Review?
 newPostBtn.addEventListener("click", (e) => {
-  newPostInput = newPostModal.querySelector("#image-link-input");
-  newPosteDescriptionInput = newPostModal.querySelector("#post-caption-input");
-  newPostEl = document.querySelector(".profile__post");
+  // newPostInput = newPostModal.querySelector("#image-link-input");
+  // newPosteDescriptionInput = newPostModal.querySelector("#post-caption-input");
+  // newPostEl = document.querySelector(".profile__post");
   closeModal(newPostModal);
 });
 
 newPostForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  newPostEl.textContent = newPostInput.value;
-  newPostDescriptionEl.textContent = newPosteDescriptionInput.value;
+
+  console.log("New Post Image Link:", newPostInput.value);
+
+  console.log("Caption", newPostDescriptionInput.value);
+
   closeModal(newPostModal);
 });
 
+// Open New Post Modal functionality
 newPostBtn.addEventListener("click", () => {
   openModal(newPostModal);
 });

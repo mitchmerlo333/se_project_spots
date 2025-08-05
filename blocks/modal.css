@@ -37,8 +37,8 @@
 
 .modal__close-btn {
   border: none;
-  background-color: #212121;
-  background-image: url(../images/close.svg);
+  background-color: transparent;
+  background-image: url(../images/close.svg.svg);
   position: absolute;
   top: 32px;
   right: 50px;
@@ -97,6 +97,11 @@
 @media (max-width: 320px) {
   .modal__container {
     padding: 22px 12px 12px;
+  }
+
+  .modal__close-btn {
+    top: 22px;
+    right: 12px;
   }
 
   .modal__title {
