@@ -52,7 +52,8 @@
 }
 
 .modal__image-container {
-  top: 0;
+  padding: 0;
+  position: relative;
   right: -52.5px;
 }
 
@@ -109,24 +110,24 @@
   cursor: pointer;
 }
 
-.modal__preview-close-btn {
+.modal__close-btn_type_preview {
   border: none;
   background-color: transparent;
   background-image: url(../images/Close-modal-white.svg);
   position: absolute;
-  right: 20px;
+  top: 0;
+  right: -42px;
   width: 40px;
   height: 40px;
   z-index: 1001;
 }
 
-.modal__preview-close-btn:hover {
+.modal__close-btn_type_preview:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
 .modal__caption {
-  text-align: center;
   line-height: 120%;
   height: 32px;
   width: 214px;
@@ -156,7 +157,7 @@
     right: 12px;
   }
 
-  .modal__preview-close-btn {
+  .modal__close-btn_type_preview {
     top: -42px;
     right: 0;
   }
