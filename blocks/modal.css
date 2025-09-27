@@ -106,19 +106,13 @@
 }
 
 .modal__submit-btn:hover {
-  background-color: #4f4f4f;
   cursor: pointer;
 }
 
 .modal__close-btn_type_preview {
-  border: none;
-  background-color: transparent;
   background-image: url(../images/Close-modal-white.svg);
-  position: absolute;
   top: 0;
   right: -42px;
-  width: 40px;
-  height: 40px;
   z-index: 1001;
 }
 
