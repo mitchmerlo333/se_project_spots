@@ -97,7 +97,7 @@
   color: rgba(33, 33, 33, 1);
 }
 
-.modal__error {
+.modal__input_type_error {
   display: block;
   margin-top: 8px;
   color: red;
@@ -120,7 +120,7 @@
   cursor: pointer;
 }
 
-.modal__submit_btn_disabled {
+.modal__submit-btn_disabled {
   background-color: #bdbdbd;
   cursor: default;
 }
@@ -157,7 +157,7 @@
 }
 
 @media (max-width: 627px) {
-  .modal__preview-close-btn {
+  .modal__close-btn_type_preview {
     top: -48px;
     right: 0;
   }

@@ -98,12 +98,34 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    // We need to find which modal is currently open
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscapeKey);
+}
+
+function handleOverlayClick(evt) {
+  // Only close if they clicked the overlay or close button
+  if (
+    evt.target.classList.contains("modal") ||
+    evt.target.classList.contains("modal__close-btn")
+  ) {
+    closeModal(evt.target.closest(".modal"));
+  }
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscapeKey);
 }
 
 previewModalCloseBtn.addEventListener("click", () => {
@@ -124,11 +146,7 @@ editProfileForm.addEventListener("submit", (e) => {
   e.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value; // Review this
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  resetValidation(
-    editProfileForm,
-    [profileNameEl, profileDescriptionEl],
-    settings
-  );
+  resetValidation(editProfileForm, settings);
   closeModal(editProfileModal);
 });
 

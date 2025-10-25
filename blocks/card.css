@@ -59,7 +59,7 @@
   width: 23px;
   background-color: transparent;
   border: none;
-  opacity: 40%;
+  opacity: 0.4/1;
 }
 
 .card__like-btn_active {
