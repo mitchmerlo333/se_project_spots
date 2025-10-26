@@ -61,7 +61,7 @@ const setEventListeners = (formEl, config) => {
 
   toggleButtonState(inputList, submitButton, config);
 
-  inputList.forEach((inputEl) => {
+  inputList.forEach((inputList, inputEl, submitButton, config) => {
     inputEl.addEventListener("change", () => {
       checkInputValidity(formEl, inputEl, config);
       toggleButtonState(inputList, submitButton, config);
@@ -72,7 +72,7 @@ const setEventListeners = (formEl, config) => {
 const enableValidation = (config) => {
   const formList = document.querySelectorAll(config.formSelector);
   formList.forEach((formEl) => {
-    setEventListeners(formEl);
+    setEventListeners(formEl, config);
   });
 };
 
