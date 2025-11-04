@@ -113,6 +113,12 @@ function openModal(modal) {
   document.addEventListener("keydown", handleEscapeKey);
 }
 
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscapeKey);
+  modal.addEventListener("click", handleOverlayClick);
+}
+
 function handleOverlayClick(evt) {
   // Only close if they clicked the overlay or close button
   if (
@@ -126,6 +132,7 @@ function handleOverlayClick(evt) {
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keydown", handleEscapeKey);
+  modal.removeEventListener("click", handleOverlayClick);
 }
 
 previewModalCloseBtn.addEventListener("click", () => {
