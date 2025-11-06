@@ -111,11 +111,6 @@ function handleEscapeKey(evt) {
 function openModal(modal) {
   modal.classList.add("modal_opened");
   document.addEventListener("keydown", handleEscapeKey);
-}
-
-function openModal(modal) {
-  modal.classList.add("modal_opened");
-  document.addEventListener("keydown", handleEscapeKey);
   modal.addEventListener("click", handleOverlayClick);
 }
 
@@ -142,6 +137,11 @@ previewModalCloseBtn.addEventListener("click", () => {
 editProfileBtn.addEventListener("click", () => {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
   openModal(editProfileModal);
 });
 
@@ -151,9 +151,8 @@ editProfileCloseBtn.addEventListener("click", () => {
 
 editProfileForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  profileNameEl.textContent = editProfileNameInput.value; // Review this
+  profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
-  resetValidation(editProfileForm, settings);
   closeModal(editProfileModal);
 });
 
