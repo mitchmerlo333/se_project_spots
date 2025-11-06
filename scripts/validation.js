@@ -42,7 +42,7 @@ const toggleButtonState = (inputList, submitButton, config) => {
   }
 };
 
-const resetValidation = (formEl, inputList config) => {
+const resetValidation = (formEl, inputList, config) => {
   inputList.forEach((inputEl) => {
     hideInputError(formEl, inputEl, config);
   });
